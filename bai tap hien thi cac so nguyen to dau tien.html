@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienthi"></p>
+<script>
+    let a = parseFloat(prompt("moi nhap so cac so nguyen to muon hien thi: "));
+    let num = 3;
+    let count = 1;
+    while(count<=a){
+        for(let kt = 2; kt<num; kt++)
+        {
+            if(num%kt===0){
+                num++;
+                kt = 2;
+            }
+        }
+        document.write(num + '<br>');
+        count++;
+        num++;
+    }
+</script>
+</body>
+</html>
